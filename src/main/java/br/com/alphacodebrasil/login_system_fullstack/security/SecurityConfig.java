@@ -18,9 +18,11 @@ public class SecurityConfig {
         return httpSecurity
                 .authorizeHttpRequests(
                         authorizeConfig ->{
-                            authorizeConfig.requestMatchers("/login").permitAll();
-                            authorizeConfig.requestMatchers("/logout").permitAll();
+                            authorizeConfig.requestMatchers("/log-out").permitAll();
+                            authorizeConfig.requestMatchers("/log-in").permitAll();
+                            authorizeConfig.requestMatchers("/refresh").permitAll();
                             authorizeConfig.anyRequest().authenticated();
+
                            }
 
                 )
