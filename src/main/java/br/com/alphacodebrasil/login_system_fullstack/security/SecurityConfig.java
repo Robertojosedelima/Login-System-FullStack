@@ -17,13 +17,14 @@ public class SecurityConfig {
     SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
                 .authorizeHttpRequests(
-                        authorizeConfig ->{
+                        authorizeConfig -> {
                             authorizeConfig.requestMatchers("/log-out").permitAll();
                             authorizeConfig.requestMatchers("/log-in").permitAll();
                             authorizeConfig.requestMatchers("/refresh").permitAll();
+                            authorizeConfig.requestMatchers("/testessl").permitAll();
                             authorizeConfig.anyRequest().authenticated();
 
-                           }
+                        }
 
                 )
                 .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt)
