@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/log-in")
 public class LoginController {
  @Autowired
-    LoginService loginService;
+ LoginService loginService;
 
     @PostMapping
     public ResponseEntity<?> login(@RequestBody @Valid LoginRecord loginRecord) {
