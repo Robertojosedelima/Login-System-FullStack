@@ -5,5 +5,5 @@ Falta fazer:
 - apontar variavel pela variavel de ambiente, 
 - criar ambiente produtivo + ambiente desevolvimento
 - instalar o portainer para visibilidade dos containers
-- implementar interface no processo.
+- implementar interface no processo. ok
 - 
