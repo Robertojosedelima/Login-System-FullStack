@@ -21,7 +21,6 @@ public class SecurityConfig {
                             authorizeConfig.requestMatchers("/log-out").permitAll();
                             authorizeConfig.requestMatchers("/log-in").permitAll();
                             authorizeConfig.requestMatchers("/refresh").permitAll();
-                            authorizeConfig.requestMatchers("/testessl").permitAll();
                             authorizeConfig.anyRequest().authenticated();
 
                         }
