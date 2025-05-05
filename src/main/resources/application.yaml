@@ -8,23 +8,23 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8085/realms/robertolima
+          issuer-uri:
 
       client:
         registration:
           keycloak:
-            client-id: Login-System-FullStack
-            client-secret: 5iv0eagcqxiSpQ9xGWSusudbqjGKXyDb
+            client-id:
+            client-secret:
             scope: openid, profile, email
 
         provider:
           keycloak:
-           issuer-uri: http://localhost:8085/realms/robertolima
+           issuer-uri:
 server:
   port: 8080
   ssl:
-    key-store: file:/home/ROBERTO/keystore.p12
-    key-store-password: 12345678
-    key-store-type: PKCS12
-    key-alias: minha-chave
-    key-password: 12345678
+    key-store:
+    key-store-password:
+    key-store-type:
+    key-alias:
+    key-password:

@@ -2,7 +2,7 @@ spring:
   application:
     name: login-system-fullstack
   profiles:
-    active: dev
+    active: prd
 
   security:
     oauth2:

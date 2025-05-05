@@ -2,21 +2,21 @@ spring:
   application:
     name: login-system-fullstack
   profiles:
-    active: dev
+    active: prd
 
   security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8085/realms/robertolima
+          issuer-uri:
 
       client:
         registration:
           keycloak:
-            client-id: Login-System-FullStack
-            client-secret: 5iv0eagcqxiSpQ9xGWSusudbqjGKXyDb
-            scope: openid, profile, email
+            client-id:
+            client-secret:
+            scope:
 
         provider:
           keycloak:
-           issuer-uri: http://localhost:8085/realms/robertolima
+           issuer-uri:
