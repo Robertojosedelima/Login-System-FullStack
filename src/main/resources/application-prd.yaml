@@ -8,15 +8,15 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri:
+          issuer-uri: http://localhost:8085/realms/robertolima
 
       client:
         registration:
           keycloak:
-            client-id:
-            client-secret:
-            scope:
+            client-id: Login-System-FullStack
+            client-secret: 5iv0eagcqxiSpQ9xGWSusudbqjGKXyDb
+            scope: openid, profile, email
 
         provider:
           keycloak:
-           issuer-uri:
+           issuer-uri: http://localhost:8085/realms/robertolima
